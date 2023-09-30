@@ -16,6 +16,10 @@ docker network rm "network_id"
 docker network create --driver=bridge --subnet=10.10.0.0/16 --ip-range=10.10.10.0/24 --gateway=10.10.10.10 alistirma-agi
 ```
 
+```bash
+docker network inspect alistirma-agi
+```
+
 ## 3: nginx imajının 1.16 versiyonundan web1 adından detached bir container yaratın. Bu containerı default bridge networküne değil de alistirma-agi networküne bağlı olarak yaratın. Host'un 8080 tcp portuna gelen isteklerin bu containerın 80 portuna gitmesini sağlayın.
 
 ```bash
